@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--这是主界面-->
+<?xml version="1.0" encoding="utf-8"?><!--这是主界面-->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-        <!--注意使用app:popupTheme而不是android:popupTheme-->
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <!--注意使用app:popupTheme而不是android:popupTheme-->
 
-    <include layout="@layout/tab_layout" />
+    <include layout="@layout/tab_layout"/>
 </LinearLayout>

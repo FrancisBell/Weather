@@ -1,22 +1,22 @@
-package com.example.android.weather;
+package com.weather.android;
 
 import android.content.Context;
-import android.provider.SyncStateContract;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.weather.android.PageFragment;
 
 /**
  * Created by 钟庆明 on 2017/5/25.
  * 这是ViewPager的适配器
  */
 
-public class Adapter extends FragmentPagerAdapter {
+public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     private Context context;
     private static final String[] mTitles = {"今天", "明天", "后天"};
 
-    public Adapter(FragmentManager fm,Context context) {
+    public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
     }

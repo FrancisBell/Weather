@@ -1,4 +1,4 @@
-package com.example.android.weather;
+package com.weather.android.weather;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

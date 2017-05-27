@@ -1,14 +1,16 @@
-package com.example.android.weather;
+package com.weather.android;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.weather.android.R;
+
 /**
  * Created by 钟庆明 on 2017/5/25.
+ * 用于显示天气信息的碎片
  */
 
 public class PageFragment extends android.support.v4.app.Fragment {
