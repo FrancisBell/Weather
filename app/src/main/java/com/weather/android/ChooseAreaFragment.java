@@ -58,6 +58,8 @@ public class ChooseAreaFragment extends android.support.v4.app.Fragment {
     //当前选中的级别
     private int currentLevel;
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle
             savedInstanceState) {
@@ -138,7 +140,7 @@ public class ChooseAreaFragment extends android.support.v4.app.Fragment {
             currentLevel = LEVEL_CITY;
         } else {
             int provinceCode = selectedProvince.getProvinceCode();
-            String address = "http://guolin.tech/api/china" + provinceCode;
+            String address = "http://guolin.tech/api/china/" + provinceCode;
             queryFromServer(address, "city");
         }
     }
@@ -162,7 +164,7 @@ public class ChooseAreaFragment extends android.support.v4.app.Fragment {
         } else {
             int provinceCode = selectedProvince.getProvinceCode();
             int cityCode = selectedCity.getCityCode();
-            String address = "http://guolin.tech/api/china" + provinceCode + "/" + cityCode;
+            String address = "http://guolin.tech/api/china/" + provinceCode + "/" + cityCode;
             queryFromServer(address, "county");
         }
     }
@@ -235,5 +237,7 @@ public class ChooseAreaFragment extends android.support.v4.app.Fragment {
             progressDialog.dismiss();
         }
     }
+
+
 
 }
